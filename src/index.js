@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom'; // Posso coloca a variavel que eu quiser no Re
 import React from 'react';
 
 import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
 
 
 ReactDOM.render(
-    <div>
-
-    <Primeiro></Primeiro>
-        
+    <div id="app">
+        <Primeiro></Primeiro>
+        <ComParametro
+            titulo="Segundo Componente"
+            subtitulo="Da Hora" />
     </div>, //Sintaxi JSX
     document.getElementById('root')
 );
